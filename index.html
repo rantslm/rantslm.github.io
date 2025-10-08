@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-lekton">
+<div id="sidebar" class="fixed w-48 h-full py-5 px-4 bg-white border-r-2 border-gray-200">
+    <div class="blogtitle font-mono text-lg mb-4 pb-2 text-gray-700 uppercase tracking-wider text-center border-b border-gray-200">
+        <a href="/">Leilani Rants</a>
+    </div>
+    <center class="mb-4">
+        <a href="/"><img src="http://static.photos/technology/200x200/42" class="w-40 h-40 rounded-full object-cover border-2 border-gray-200"></a>
+    </center>
+
+    <div class="text-center italic text-gray-600 mb-6">Portfolio</div>
+
+    <div class="space-y-3">
+        <div class="border-b border-gray-200 pb-1 text-right">
+            <a href="/" class="text-gray-700 hover:text-gray-900">Home</a>
+        </div>
+        <div class="border-b border-gray-200 pb-1 text-right">
+            <a href="#projects" class="text-gray-700 hover:text-gray-900">Projects</a>
+        </div>
+        <div class="border-b border-gray-200 pb-1 text-right">
+            <a href="https://github.com" class="text-gray-700 hover:text-gray-900">GitHub</a>
+        </div>
+        <div class="border-b border-gray-200 pb-1 text-right">
+            <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+        </div>
+    </div>
+        <main class="ml-52 p-6">
+            <div id="projects" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project cards will be dynamically inserted here -->
+<div class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">Project Name</h3>
+                        <p class="text-gray-600 text-sm">Short description of what this project is about and what technologies were used.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <div class="text-xs text-gray-500">JavaScript • React • Node.js</div>
+                            <a href="#" class="text-gray-700 hover:text-blue-500">
+                                <i data-feather="github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+<!-- Project Card 2 -->
+            <div class="project-card bg-white bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="http://static.photos/abstract/640x360/2" alt="Project 2" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">Another Project</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Short description of what this project is about and what technologies were used.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="text-xs text-gray-500 mr-3">Python • Flask • SQL</span>
+                        <a href="#" class="ml-auto text-pink-500 hover:text-pink-600">
+                            <i data-feather="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card bg-white bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="http://static.photos/minimal/640x360/3" alt="Project 3" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                    <span class="absolute top-3 right-3 bg-pink-500 text-white text-xs px-2 py-1 rounded-full">Featured</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">Mobile App</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Short description of what this project is about and what technologies were used.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="text-xs text-gray-500 mr-3">React Native • Firebase</span>
+                        <a href="#" class="ml-auto text-pink-500 hover:text-pink-600">
+                            <i data-feather="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card bg-white bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="http://static.photos/technology/640x360/4" alt="Project 4" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">UI Design System</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Short description of what this project is about and what technologies were used.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="text-xs text-gray-500 mr-3">Figma • Storybook</span>
+                        <a href="#" class="ml-auto text-pink-500 hover:text-pink-600">
+                            <i data-feather="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card bg-white bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="http://static.photos/abstract/640x360/5" alt="Project 5" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">API Service</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Short description of what this project is about and what technologies were used.</p>
+                    <div class="mt-4 flex items-center">
+                        <span class="text-xs text-gray-500 mr-3">Node.js • Express • MongoDB</span>
+                        <a href="#" class="ml-auto text-pink-500 hover:text-pink-600">
+                            <i data-feather="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Me Card -->
+            <div class="project-card bg-white bg-opacity-80 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800">About Me</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Hello! I'm a passionate developer who loves creating beautiful, functional digital experiences. This is my creative space where I showcase my projects and share my journey.</p>
+                    
+                    <div class="mt-6 grid grid-cols-2 gap-2">
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="text-pink-500 mr-2"></i>
+                            <span class="text-xs text-gray-600">Somewhere</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="heart" class="text-pink-500 mr-2"></i>
+                            <span class="text-xs text-gray-600">Design & Code</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="coffee" class="text-pink-500 mr-2"></i>
+                            <span class="text-xs text-gray-600">Too much coffee</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="cpu" class="text-pink-500 mr-2"></i>
+                            <span class="text-xs text-gray-600">Creative Tech</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 flex space-x-3">
+                        <a href="#" class="text-gray-500 hover:text-pink-500">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-pink-500">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-pink-500">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-pink-500">
+                            <i data-feather="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="mt-8 text-center text-gray-500 text-xs">
+            <p>© 2023 My GitHub Projects</p>
+            <p class="mt-1">Built with <i data-feather="heart" class="inline text-red-400"></i> and <i data-feather="code" class="inline text-blue-400"></i></p>
+        </footer>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
